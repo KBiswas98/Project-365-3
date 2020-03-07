@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./topNavbar.scss";
 import { Link } from "react-router-dom";
-import { FiUser, FiSearch } from "react-icons/fi";
+import { FiUser, FiSearch, FiMenu } from "react-icons/fi";
 
 export default class TopNavbar extends Component {
   render() {
@@ -19,6 +19,11 @@ export default class TopNavbar extends Component {
             </Link>
             <Link to="/user">
               <FiUser />
+            </Link>
+          </div>
+          <div className="barger">
+            <Link to="/search">
+              <FiMenu />
             </Link>
           </div>
         </div>

@@ -1,16 +1,17 @@
+@import "../../../utils/responsive.scss";
+
 .top-navbar {
   background-color: #24292d;
   height: 70px;
-  
 }
 
 .options {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-    align-items: center;
-    // background-color: pink;
-    height: 100%;
+  align-items: center;
+  // background-color: pink;
+  height: 100%;
   a {
     margin: 0px 20px;
     color: rgb(156, 156, 156);
@@ -21,16 +22,33 @@
     // text-transform: uppercase;
   }
   a:hover {
-      font-weight: 800;
-      color: #289C97;
+    font-weight: 800;
+    color: #289c97;
   }
 
-  
+  @include tablet {
+      flex-direction: row-reverse;
+    div:nth-child(1) {
+      display: none;
+    }
+
+    div:nth-child(2) {
+      display: none;
+      
+    }
+  }
 }
 
 .logo {
-    position: absolute;
-    left: 50%;
-    top: 15px;
-    transform: translate(-50%);
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  transform: translate(-50%);
+}
+
+.barger {
+  display: none;
+  @include tablet {
+    display: block;
+  }
 }

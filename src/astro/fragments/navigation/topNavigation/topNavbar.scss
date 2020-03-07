@@ -1,0 +1,36 @@
+.top-navbar {
+  background-color: #24292d;
+  height: 70px;
+  
+}
+
+.options {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+    align-items: center;
+    // background-color: pink;
+    height: 100%;
+  a {
+    margin: 0px 20px;
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    // text-transform: uppercase;
+  }
+  a:hover {
+      font-weight: 800;
+      color: #289C97;
+  }
+
+  
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%);
+}

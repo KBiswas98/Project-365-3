@@ -9,7 +9,13 @@ export const Button = props => {
           {props.children}
         </button>
       );
-      break;
+    case "option":
+      return (
+        <button className="option" onClick={props.callback} style={props.style}>
+          {props.children}
+        </button>
+      );
+
     default:
       return (
         <button

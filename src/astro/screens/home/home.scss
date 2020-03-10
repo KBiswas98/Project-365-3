@@ -1,4 +1,281 @@
 .home {
-    background-color: #24292D;
-    height: 100vh;
+  background-color: #24292d;
+  min-height: 100vh;
+  max-height: 100%;
+  padding: 20px 0px 0px 20px;
+  display: flex;
+  flex-flow: row wrap;
+
+  .input_section {
+    max-width: 405px;
+    min-width: 300px;
+    width: 100%;
+    background-color: pink;
+    padding: 40px 20px 40px 25px;
+    border-radius: 15px;
+    margin: 6vw;
+    max-height: 370px;
+
+    background: rgb(39, 43, 47);
+    background: -moz-linear-gradient(
+      167deg,
+      rgba(39, 43, 47, 1) 0%,
+      rgba(32, 35, 39, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      167deg,
+      rgba(39, 43, 47, 1) 0%,
+      rgba(32, 35, 39, 1) 100%
+    );
+    background: linear-gradient(
+      167deg,
+      rgba(39, 43, 47, 1) 0%,
+      rgba(32, 35, 39, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#272b2f",endColorstr="#202327",GradientType=1);
+    box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.63),
+      0 6px 20px 0 rgba(0, 0, 0, 0.527);
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      .row-holder {
+        display: flex;
+        flex-flow: row wrap;
+        .row {
+          //   background-color: pink;
+          div {
+            display: flex;
+            flex-flow: row wrap;
+          }
+        }
+
+        div {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.123);
+  height: 25px;
+  padding-left: 3px;
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: 1px solid rgb(88, 88, 88);
+  color: #fff;
+}
+
+label {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.699);
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+}
+
+.date {
+  input {
+    max-width: 107px;
+  }
+}
+
+.time {
+  input {
+    max-width: 107px;
+  }
+}
+
+.area {
+  margin-left: 10px;
+  //   background-color: pink;
+  input {
+    width: 370px;
+  }
+}
+
+.latlang {
+  input {
+    width: 172px;
+  }
+}
+
+.submit {
+  max-width: 150px;
+  height: 40px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 20px;
+  border-radius: 2px;
+  border-width: 0px;
+  background-color: rgba(255, 255, 255, 0.123);
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+    //   font-weight: 800;
+    box-shadow: 0 0px 60px 0 rgba(0, 0, 0, 0.63),
+      0 6px 20px 0 rgba(0, 0, 0, 0.527);
+  }
+}
+
+.markar {
+  // background-color: pink;
+  height: 450px;
+  position: relative;
+  top: -370px;
+  // opacity: 0.3;
+  color: #fff;
+
+  p {
+    font-size: 20px;
+    span {
+      font-size: 12px;
+      top: -20px;
+    }
+  }
+
+  p:nth-child(1) {
+    position: relative;
+    top: 160px;
+    left: 210px;
+  }
+  p:nth-child(2) {
+    position: relative;
+    top: 10px;
+    left: 100px;
+  }
+
+  p:nth-child(3) {
+    position: relative;
+    top: 5px;
+    left: 70px;
+  }
+
+  p:nth-child(4) {
+    position: relative;
+    top: 70px;
+    left: 170px;
+  }
+
+  p:nth-child(5) {
+    position: relative;
+    top: 135px;
+    left: 70px;
+  }
+
+  p:nth-child(6) {
+    position: relative;
+    top: 120px;
+    left: 100px;
+  }
+
+  p:nth-child(7) {
+    position: relative;
+    top: -25px;
+    left: 210px;
+  }
+
+  p:nth-child(8) {
+    position: relative;
+    top: 30px;
+    left: 320px;
+  }
+
+  p:nth-child(9) {
+    position: relative;
+    top: -45px;
+    left: 350px;
+  }
+
+  p:nth-child(10) {
+    position: relative;
+    top: -200px;
+    left: 243px;
+  }
+  p:nth-child(11) {
+    position: relative;
+    top: -355px;
+    left: 345px;
+  }
+
+  p:nth-child(12) {
+    position: relative;
+    top: -440px;
+    left: 310px;
+  }
+
+  h6{
+    font-size: 14px;
+  }
+
+  h6:nth-child(13) {
+    position: absolute;
+    top: 70px;
+    left: 140px;
+  }
+  h6:nth-child(14) {
+    position: absolute;
+    top: -20px;
+    left: 50px;
+  }
+  h6:nth-child(15) {
+    // background-color: pink;
+    position: absolute;
+    max-width: 30px;
+    top: 30px;
+    left: 10px;
+  }
+  h6:nth-child(16) {
+    position: absolute;
+    top: 130px;
+    left: 100px;
+    width: 12px;
+  }
+  h6:nth-child(17) {
+    position: absolute;
+    width: 10px;
+    top: 240px;
+    left: 10px;
+  }
+  h6:nth-child(18) {
+    position: absolute;
+    top: 380px;
+    left: 40px;
+  }
+  h6:nth-child(19) {
+    position: absolute;
+    top:295px;
+    left: 140px;
+  }
+  h6:nth-child(20) {
+    position: absolute;
+    top: 380px;
+    left: 260px;
+  }
+  h6:nth-child(21) {
+    position: absolute;
+    width: 10px;
+    top: 240px;
+    left: 400px;
+  }
+  h6:nth-child(22) {
+    position: absolute;
+    top: 130px;
+    left: 320px;
+    width: 12px;
+  }
+  h6:nth-child(23) {
+    position: absolute;
+    width: 10px;
+    top: 30px;
+    left: 400px;
+  }
+  h6:nth-child(24) {
+    position: absolute;
+    top:-20px;
+    left: 265px;
+  }
 }
